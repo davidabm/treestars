@@ -1,0 +1,445 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.4.1 
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+/*首页样式*/
+body{
+	background: #000;
+}
+.home{
+	background: url(../images/bg_home.jpg) no-repeat #000 center;
+	background-size:cover;
+	width: 100%;
+    height: 100vh;
+}
+.home_logo{
+	left: 10%;
+    width: 710px;
+    height: 247px;
+    padding-top: 190px;
+    background: url(../images/logo_home.png) no-repeat;
+    display: block;
+    background-position: 0 190px;
+    position: relative;
+}
+.brief{
+    width: 677px;
+    height: 227px;
+    background: url(../images/home_brief.png) no-repeat;
+    left: 10%;
+    margin-top: 40px;
+    display: block;
+    position: relative;
+}
+.hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.home_nav{
+	width: 480px;
+    left: 10%;
+    margin-top: 145px;
+    height: 316px;
+    position: relative;
+}
+.marco-x{
+	float: right;
+	width: 480px;
+	height: 50px;
+	display: block;
+	background: url(../images/home_bt_marco-x.png) no-repeat;
+}
+.marco-x:hover{
+	float: right;
+	width: 480px;
+	height: 50px;
+	display: block;
+	background: url(../images/home_bt_marco-x_on.png) no-repeat;
+	transition: all 0.3s linear;
+}
+.mixar{
+	float: right;
+	width: 305px;
+	height: 177px;
+	margin-top: 45px;
+	display: block;
+	background: url(../images/home_bt_mixar.png) no-repeat;
+}
+.mixar:hover{
+	float: right;
+	width: 305px;
+	height: 177px;
+	margin-top: 45px;
+	display: block;
+	background: url(../images/home_bt_mixar_on.png) no-repeat;
+	transition: all 0.3s linear;
+}
+.project_tit{
+	background: url(../images/MarcoLogo.png) no-repeat;
+	background-size: contain;
+	width: 654px;
+	height: 189px;
+	position: fixed;
+	left: 0;
+	top: 130px;
+}
+/*内容页*/
+.wrap{
+	float:left;
+	position:fixed;
+	left:50%;
+	top: 0;
+}
+.content{
+	width: 1920px;
+	position:relative;
+	top: 0;
+	left: -50%;
+}
+.menu{
+	position: absolute;
+    left: 0px;
+    top: 390px;
+}
+.menu li{
+	height: 130px;
+	width: 620px;
+}
+.menu li a{
+	display: block;
+	height: 130px;
+	width: 620px;
+}
+.nav_branding,.nav_productdesign,.nav_application,.nav_aboutus{
+	display: block;
+	height: 130px;
+	width: 620px;	
+}
+.nav_branding{
+	background: url(../images/nav_branding.png) no-repeat;
+	display: block;
+}
+.nav_branding>.active{
+	background: url(../images/nav_branding_on.png) no-repeat;
+}
+.nav_productdesign{
+	background: url(../images/nav_productdesign.png) no-repeat;
+	display: block;
+}
+.nav_productdesign>.active{
+	background: url(../images/nav_productdesign_on.png) no-repeat;
+}
+.nav_application{
+	background: url(../images/nav_application.png) no-repeat;
+	display: block;
+}
+.nav_application>.active{
+	background: url(../images/nav_application_on.png) no-repeat;
+}
+.nav_aboutus{
+	background: url(../images/nav_aboutus.png) no-repeat;
+	display: block;
+}
+.nav_aboutus>.active{
+	background: url(../images/nav_aboutus_on.png) no-repeat;
+}
+.logo{
+	width: 99px;
+	height: 90px;
+	display: block;
+	background: url(../images/logo.png) no-repeat;
+	position: fixed;
+    top: 45px;
+    right: 90px;
+}
+.wechat,.email{
+	width: 92px;
+	height: 91px;
+	display: block;
+	background: url(../images/wechat.png);
+}
+.email{
+	background: url(../images/email.png);
+	margin-top: 6px;
+}
+.wechat_on,.email_on{
+	width: 92px;
+	height: 91px;
+	display: block;
+	background: url(../images/wechat_on.png);
+}
+.email_on{
+	background: url(../images/email_on.png);
+	margin-top: 6px;
+}
+.contactus {
+    position: absolute!important;
+    top: 635px;
+    right: 0;
+}
+.branding_bg,.productdesign_bg,.application_bg,.aboutus_bg{
+	background: url(../images/bg_1.jpg) no-repeat #000 center;
+	background-size:cover;
+	height: 100%;	
+}
+.productdesign_bg{
+	background: url(../images/bg_2.jpg) no-repeat #000 center;
+	background-size:cover;
+}
+.application_bg{
+	background: url(../images/bg_3.jpg) no-repeat #000 center;
+	background-size:cover;
+}
+.aboutus_bg{
+	background: url(../images/bg_4.jpg) no-repeat #000 center;
+	background-size:cover;
+}
+.video_content{
+	width: 865px;
+	height: 570px;
+	padding-left: 670px;
+	padding-top: 205px;
+	margin: 0 auto;
+	text-align: center;
+}
+.video_pic{
+	width: 830px;
+	height: 470px;
+	margin: 0 auto;
+}
+.erweima_show {
+    position: absolute;
+    top: 548px;
+    right: 98px;
+    height: 178px;
+}
+.email_add_show {
+    position: absolute;
+    top: 732px;
+    right: 98px;
+    height: 91px;
+}
+.project_tit {
+    position: absolute;!important;
+    left: 0;
+    top: 130px;
+}
+.logo,.branding_bg,.productdesign_bg,.application_bg,.aboutus_bg{
+	position: fixed!important;
+}
+.branding_bg,.productdesign_bg,.application_bg,.aboutus_bg{
+	top: 0;
+	width: 100%;
+}
+.contactus_show{
+	width: 0px;
+	overflow: hidden;
+}
+.email_add_show,.erweima_show{
+	display: none;
+}
+.content_branding {
+    position: fixed!important;
+    top: 0;
+}
+
+/**/
+@media (max-width: 1280px) {
+    .project_tit{
+    	width: 500px;
+    	top: 50px;
+    }
+    .nav_branding,.nav_branding>.active{
+    	background-size: 300px;
+    }.nav_branding, .nav_productdesign, .nav_application, .nav_aboutus {
+    display: block;
+    height: 92px;
+    width: 465px;
+    margin-top: 3px;
+	}
+	.nav_productdesign,.nav_productdesign>.active{
+		background-size: 465px;
+	}
+	.nav_application,.nav_application>.active{
+		background-size: 370px;
+	}
+	.nav_aboutus,.nav_aboutus>.active{
+		background-size: 290px;
+	}
+	.menu{
+		top: 260px;
+	}
+	.menu li a,.menu li{
+		width: 465px;
+		height: 92px;
+	}
+	.video_content{
+		padding-left: 520px;
+		width: 700px;
+		padding-top: 100px;
+	}
+	.video_content>video{
+		width: 700px;
+	}
+	.wechat, .email {
+    width: 52px;
+    height: 51px;
+    background-size: 52px 51px;
+	}
+	.erweima_show {
+    top: 507px;
+    right: 57px;
+	}
+	.email_add_show {
+    position: absolute;
+    top: 692px;
+    right: 57px;
+	}
+	.email_add_show>img{
+		height: 51px;
+		width: 330px;
+	}
+	.contactus{
+		top: 550px;
+	}
+
+
+	.home_logo {
+	width: 400px;
+    height: 190px;
+    padding-top: 80px;
+    background-position: 0 80px;
+    background-size: 400px;
+	}
+	.brief {
+    width: 550px;
+    height: 220px;
+    margin-top: 0px;
+    display: block;
+    background-size: 550px;
+	}
+	.home_nav{
+	width: 550px;
+    height: 200px;
+    margin-top: 10px;
+	}
+	.marco-x,.marco-x:hover, {
+    width: 450px;
+    height: 60px;
+    background-size: 450px;
+	}
+	.mixar,.mixar:hover{
+	width: 250px;
+    height: 60px;
+    background-size: 250px;
+	}
+	.home{
+		min-height: 700px;
+	}
+
+
+
+
+}

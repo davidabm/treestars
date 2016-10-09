@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maroc-X Branding</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" href="css/animsition.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="js/animsition.min.js"></script>
+</head>
+<body>
+<div class="branding_bg animsition" data-animsition-in-class="fade-in-up-sm" data-animsition-out-class="fade-out-up-sm"></div>
+	<div class="content_branding animsition" data-animsition-in-duration="1000">
+		<span class="massage">hello world!</span>
+	</div>
+	<div class="project_tit animsition" data-animsition-in-duration="1000" data-animsition-out-duration="500">
+		<div class="hide-text"> MARCO-X Supporting a Dynamic Life </div>
+	</div>
+	
+	<ul id="myMenu" class="menu">
+	    <span class="nav_branding animsition" data-animsition-in-duration="400"><li data-menuanchor="firstPage" class="active"><a href="./branding.html" class="hide-text animsition-link">Branding</a></li></span>
+	    <span class="nav_productdesign animsition" data-animsition-in-duration="800"><li data-menuanchor="secondPage" class=""><a href="./productdesign.html" class="hide-text animsition-link">Product design</a></li></span>
+	    <span class="nav_application animsition" data-animsition-in-duration="1200"><li data-menuanchor="thirdPage" class=""><a href="./application.html" class="hide-text animsition-link">Application</a></li></span>
+	    <span class="nav_aboutus animsition" data-animsition-in-duration="1600"><li data-menuanchor="fourthPage" class=""><a href="./aboutus.html" class="hide-text animsition-link">About us</a></li></span>
+	    <a href="./" class="logo hide-text animsition animsition-link" data-animsition-in-class="fade-in-right-sm" data-animsition-out-class="fade-out-right-sm">MARCO-X</a>
+	</ul>
+	<div class="contactus animsition" data-animsition-in-class="fade-in-right-sm" data-animsition-out-class="fade-out-right-sm">
+		<a href="#" class="wechat"></a>
+		<a href="#" class="email"></a>
+	</div>
+	<span class="erw erweima_show">
+		<img src="images/erweima.png" alt="" width="178" height="178" class=" animsition" data-animsition-out-class="fade-out-down-sm">
+	</span>
+	<span class="mai email_add_show">
+		<img src="images/email_add.png" alt="" width="591" height="91" class=" animsition" data-animsition-out-class="fade-out-down-sm">
+	</span>
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-left-sm',
+    outClass: 'fade-out-left-sm',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+	$(function() {
+	$('.wechat').on('click', function(){
+		$('.erw').toggle();
+		$('.wechat').toggleClass('wechat_on');
+	})
+	$('.email').on('click', function(){
+		$('.mai').toggle();
+		$('.email').toggleClass('email_on');
+	})
+});
+</script>
+</body>
+</html>
